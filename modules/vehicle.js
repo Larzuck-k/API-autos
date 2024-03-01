@@ -8,11 +8,11 @@ const vehicle = EXPRESSJS.Router();
 
 //Consultar todos
 
-  people.get("/vehicle/listing", (req, res) => {
+vehicle.get("/vehicle/listing", (req, res) => {
     conexion.query("SELECT * FROM vehicle order by id", (error, datos) => {
    
       try {
-    res.status(200).send(datos);;
+    res.status(200).send(datos);
       }
         catch (err) {
           res.status(404).send({
