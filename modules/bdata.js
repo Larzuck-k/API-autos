@@ -1,10 +1,10 @@
 //modulo que gestiona la conexión con la base de datos
 
-let MYSQL = require("mysql2");
+const mysql = require("mysql2");
 
 //Cadena de conexión
 
-const conexion = MYSQL.createConnection({
+const conexion = mysql.createConnection({
     host: "localhost",
     user: 'root',
     password: '',

@@ -15,6 +15,8 @@ app.use(cors());
 
 app.use("/",require("./modules/vehicle"))
 
+app.use("/",require("./modules/user"))
+
 
 
 app.listen(port,()=>{
